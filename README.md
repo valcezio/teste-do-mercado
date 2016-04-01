@@ -1,5 +1,5 @@
-# teste-do-mercado
-<!DOCTYPE html>
+<!--# teste-do-mercado -->
+
 <html>
 <head>
 	<title>teste-do-mercado</title>
