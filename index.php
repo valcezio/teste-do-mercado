@@ -58,7 +58,13 @@
 		<td><?php print $Prod['qtd']?></td>
 		<td>R$<?php print $Prod['preco']?></td>
 		<td><?php print $Prod ['tp_negocio']?></td>
-		<td><a href="#" >X</a></td>
+		<script type="text/javascript">
+		function confirm_delete() 
+		{
+  		return confirm('Deseja remover o item?');
+		}
+		</script>
+		<td><a href='deletar.php?del=<?php print $Prod['cd_neg']?>' onclick="return confirm_delete()">X</a></td><!--Envia o cd_neg para deletar.php -->
 	</tr>
 	<?php
 	if($Prod ['tp_negocio']=='Compra')
